@@ -29,5 +29,5 @@ def print_game_board(grid):
     """
     print('======= OCEAN =========')
     for row in grid:
-        prin(' '.join(row))
+        print(' '.join(row))
     print('=======================')
