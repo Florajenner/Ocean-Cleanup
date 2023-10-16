@@ -162,7 +162,7 @@ def game_loop(player_name):
     num_guesses = 0
     num_rubbish = 0
     
-    while num_guesses < 5:
+    while num_guesses < 10:
         guess_row, guess_col = get_user_guess()
         guess = (guess_row, guess_col)
         
