@@ -77,4 +77,8 @@ def get_user_guess():
 ​
 ​
 def game_loop(player_name):
+
+    # Create a set to track previous guesses and avoid duplicate guesses.
+    previous_guesses = set()
+
     print(f'Well hello {player_name}, let us see what you have got')                     
