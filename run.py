@@ -77,15 +77,17 @@ def get_user_guess():
 ​
 ​
 def game_loop(player_name):
-
-    # Create a set to track previous guesses and avoid duplicate guesses.
-    previous_guesses = set()
-    num_guesses = 0
-    num_rubbish = 0
-
-     while num_guesses < 5:
-    guess_row, guess_col = get_user_guess()
-    guess = (guess_row, guess_col)
+    """
+    This function contains the main game loop
+    """
+    
+    while num_guesses < 5:
+        guess_row, guess_col = get_user_guess()
+        guess = (guess_row, guess_col)
+        
+        if guess in previous_guesses:
+            print(f'Sorry {player_name}, you have already guessed that location.')
+            continue
 
     print(f'Well hello {player_name}, let us see what you have got') 
                         
