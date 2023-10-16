@@ -54,3 +54,6 @@ def get_player_name():
                             Hey you cannot enter nothing,
                             This really does prove my point that humans are
                             stupid - try again, your name?''').strip().lower()
+
+def game_loop(player_name):
+    print(f'Well hello {player_name}, let us see what you have got')                             
