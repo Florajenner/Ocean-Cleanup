@@ -60,45 +60,29 @@ The testing phase is crucial to ensure that each function within the application
 | get_player_name()| Call function                                           | Returns a validated player name or prompts user again for input    | Pass|
 | intro_game()     | Call function                                           | Provides game introduction and starts the game loop               | Pass|
 
+### Pep8 Testing
+All clear, no errors found.
+![Pep8](/images/pep8.png)
+
+
 ## Credits
-### Creating a 2D grid:
-The `create_ocean` function is utilized for crafting a 2D grid by initially forming a 1D list, shuffling it, and then transforming it into a 2D list. This method is commonly employed to manage 2D data in Python.
-
-Reference: [Python: Creating a 2D list](link).
-
-### Shuffling a list:
-The `random.shuffle` method is employed to randomize the order of items in `grid_list`.
-
-Reference: [Python random.shuffle() Method](link).
-
-### User Input Validation:
-The `get_user_guess` function ensures user input adheres to specified boundaries.
-
-Reference: [Python Input and Output](link).
 
 ### Working with Characters and Unicode code points:
 Conversion between characters and their Unicode code points using the `ord` function is observed in the `game_loop` function.
 
-Reference: [Python ord() function](link).
+Reference: [Python ord() function](https://stackoverflow.com/questions/67697669/alphabetical-grid-using-python3).
 
 ### Working with Sets:
 The `previous_guesses` set is utilized to record the user's past guesses. Sets store unique elements and checking for existence in a set is faster than in a list.
 
-Reference: [Python Sets](link).
-
-### Nested Loops:
-Nested loops are engaged to navigate through the grid in the `print_game_board` and `game_loop` functions. This is a typical pattern when dealing with 2D data.
-
-Reference: [Python Nested Loops](link).
-
-### Global Variables:
-The `grid` global variable is accessed in multiple functions within your script.
-
-Reference: [Python Global Variables](link).
+Reference: [Python Sets](https://www.w3schools.com/python/python_sets.asp).
 
 ### Books
 Python For GCSE Computer Science Programming Guide by CGP
 Python Crash Course (2nd Edition) by Eric Matthes
+
+## Next Stages
+In the future improvements could be made by giving players the option to select easy, medium or hard at the start of the game.
 
 ## Contributing
 Feel free to fork the project and submit pull requests for any bug fixes or feature enhancements. All contributions are welcome!
