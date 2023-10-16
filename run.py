@@ -49,3 +49,8 @@ def get_player_name():
     This function gets the players name and validates that it isn't empty.
     """
     player_name = input('Please can I have your name?').strip().lower()          
+        while player_name == '':
+        player_name = input('''
+                            Hey you cannot enter nothing,
+                            This really does prove my point that humans are
+                            stupid - try again, your name?''').strip().lower()
