@@ -96,11 +96,12 @@ def game_loop(player_name):
         num_guesses += 1
 
         if grid[ord(guess_row) - ord('A')][guess_col - 1] == 'P':
-        print(f'Well done {player_name}, you found some rubbish!')
-        num_rubbish += 1
-        # Replace the 'P' with 'X' to indicate that the rubbish has been found
-        grid[ord(guess_row) - ord('A')][guess_col - 1] = 'X'
+            print(f'Well done {player_name}, you found some rubbish!')
+            num_rubbish += 1
+            # Replace the 'P' with 'X' to indicate that the rubbish has been found
+            grid[ord(guess_row) - ord('A')][guess_col - 1] = 'X'
         else:
+            print(f'Sorry {player_name}, there is no rubbish there.')
 
         print(f'Sorry {player_name}, there is no rubbish there.')
 
