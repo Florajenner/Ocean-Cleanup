@@ -31,3 +31,15 @@ def print_game_board(grid):
     for row in grid:
         print(' '.join(row))
     print('=======================')
+
+def intro_game():
+    """
+    This explains teh concept of the game and starts it
+    """
+    print('''
+          Welcome traveller, the Earth need your help.
+          The stupid humans have left their plastics in the ocean...
+          You need to prove humans aren't all bad and we are going to have a
+          contest between you and I as to who is going to pick up most the
+          litter.
+          First of all I need to get something from you.''')    
