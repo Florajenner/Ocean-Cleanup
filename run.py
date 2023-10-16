@@ -80,5 +80,12 @@ def game_loop(player_name):
 
     # Create a set to track previous guesses and avoid duplicate guesses.
     previous_guesses = set()
+    num_guesses = 0
+    num_rubbish = 0
 
-    print(f'Well hello {player_name}, let us see what you have got')                     
+     while num_guesses < 5:
+    guess_row, guess_col = get_user_guess()
+    guess = (guess_row, guess_col)
+
+    print(f'Well hello {player_name}, let us see what you have got') 
+                        
