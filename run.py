@@ -1,4 +1,5 @@
 import random
+import re
 
 # Define grid dimensions
 ROWS, COLS = 10, 10
@@ -36,7 +37,7 @@ def get_user_guess():
     """
     while True:
         guess = input("Enter your guess (A-J, 1-10):\n").strip().upper()
-        if len(guess) != 2 or not ('A' <= guess[0] <= 'J') or not (1 <= int(guess[1:]) <= 10):
+        if not re.match(r'^[A-J][1-9]|10$', guess):
             print("Invalid input. Please enter a letter between A and J and a number between 1 and 10.")
             print("Hint: The letter should be between A and J, and the number should be between 1 and 10.")
         else:
