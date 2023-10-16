@@ -22,3 +22,12 @@ def create_ocean():
     # Convert the shuffled list to 2D grid
     grid = [grid_list[i:i+COLS] for i in range(0, len(grid_list), COLS)]
     return grid
+
+def print_game_board(grid):
+    """
+    This function prints the game grid
+    """
+    print('======= OCEAN =========')
+    for row in grid:
+        prin(' '.join(row))
+    print('=======================')
