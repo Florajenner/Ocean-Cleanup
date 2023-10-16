@@ -80,7 +80,8 @@ def game_loop(player_name):
     """
     This function contains the main game loop
     """
-    
+    print(f'Well hello {player_name}, let us see what you have got') 
+
     while num_guesses < 5:
         guess_row, guess_col = get_user_guess()
         guess = (guess_row, guess_col)
@@ -94,5 +95,14 @@ def game_loop(player_name):
         # Increment the count of guesses made by the player.
         num_guesses += 1
 
-    print(f'Well hello {player_name}, let us see what you have got') 
+        if grid[ord(guess_row) - ord('A')][guess_col - 1] == 'P':
+        print(f'Well done {player_name}, you found some rubbish!')
+        num_rubbish += 1
+        # Replace the 'P' with 'X' to indicate that the rubbish has been found
+        grid[ord(guess_row) - ord('A')][guess_col - 1] = 'X'
+        else:
+
+        print(f'Sorry {player_name}, there is no rubbish there.')
+
+
                         
