@@ -105,5 +105,5 @@ def game_loop(player_name):
 
         print(f'Sorry {player_name}, there is no rubbish there.')
 
-
+    print(f'Game ovr, {player_name}! You found {num_rubbish} pieces of rubbish.')    
                         
