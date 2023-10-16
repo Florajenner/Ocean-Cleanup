@@ -11,7 +11,7 @@ The Ocean Cleanup Game is an interactive, console-based game that aims to educat
 ## How to Play
 Upon starting the game, players are greeted with a narrative that sets the context for the gameplay. Players then enter their name and are presented with a 10x10 grid representing the ocean, where some cells contain plastic rubbish denoted by 'P'.
 
-Players are given 5 attempts to guess the location of the rubbish on the grid. For each guess, players enter a coordinate (e.g., C4), aiming to locate a piece of rubbish. When a player successfully locates rubbish, it is marked with an 'X' on the grid.
+Players are given 10 attempts to guess the location of the rubbish on the grid. For each guess, players enter a coordinate (e.g., C4), aiming to locate a piece of rubbish. When a player successfully locates rubbish, it is marked with an 'X' on the grid.
 
 The game continues until all guesses are used up, after which the game reveals the remaining rubbish on the grid and provides a score based on the number of pieces of rubbish the player was able to clean up.
 
@@ -78,8 +78,7 @@ The `previous_guesses` set is utilized to record the user's past guesses. Sets s
 Reference: [Python Sets](https://www.w3schools.com/python/python_sets.asp).
 
 ### Books
-Python For GCSE Computer Science Programming Guide by CGP
-Python Crash Course (2nd Edition) by Eric Matthes
+Python For GCSE Computer Science Programming Guide by CGP, Python Crash Course (2nd Edition) by Eric Matthes
 
 ## Next Stages
 In the future improvements could be made by giving players the option to select easy, medium or hard at the start of the game.
