@@ -89,5 +89,10 @@ def game_loop(player_name):
             print(f'Sorry {player_name}, you have already guessed that location.')
             continue
 
+        # Add the current guess to the set of previous guesses.
+        previous_guesses.add(guess)
+        # Increment the count of guesses made by the player.
+        num_guesses += 1
+
     print(f'Well hello {player_name}, let us see what you have got') 
                         
