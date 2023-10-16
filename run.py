@@ -107,3 +107,13 @@ def game_loop(player_name):
 
     print(f'Game over, {player_name}! You found {num_rubbish} pieces of rubbish.')    
                         
+    # Display the game board with the plastic that the player has managed to find marked with an 'X', and the plastic they did not find marked with a 'P'
+    print('======= OCEAN =========')
+    for row in range(ROWS):
+        for col in range(COLS):
+            if grid[row][col] == 'P':
+                print('X', end=' ')
+            else:
+                print('-', end=' ')
+        print()
+    print('=======================')
