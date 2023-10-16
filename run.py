@@ -43,3 +43,9 @@ def intro_game():
           contest between you and I as to who is going to pick up most the
           litter.
           First of all I need to get something from you.''')    
+
+def get_player_name():
+    """
+    This function gets the players name and validates that it isn't empty.
+    """
+    player_name = input('Please can I have your name?').strip().lower()          
