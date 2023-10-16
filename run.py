@@ -109,11 +109,12 @@ def game_loop(player_name):
                         
     # Display the game board with the plastic that the player has managed to find marked with an 'X', and the plastic they did not find marked with a 'P'
     print('======= OCEAN =========')
-    for row in range(ROWS):
-        for col in range(COLS):
-            if grid[row][col] == 'P':
-                print('X', end=' ')
+    for row in grid:
+        row_str = ''
+        for cell in row:
+            if cell == 'X':
+                row_str += cell + ' '
             else:
-                print('-', end=' ')
-        print()
+                row_str += cell + ' '
+        print(row_str.strip())
     print('=======================')
