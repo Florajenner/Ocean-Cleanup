@@ -40,8 +40,6 @@ def get_user_guess():
     """
     while True:
         guess = input("Enter your guess (A-J, 1-10):\n").strip().upper()
-        print('guess: ', guess)
-        print('??: ', re.match(r'^[A-J](10|[1-9])$', guess))
         if not re.match(r'^[A-J](10|[1-9])$', guess):
             print(
                 """
