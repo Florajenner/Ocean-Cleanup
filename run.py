@@ -34,7 +34,7 @@ def print_game_board(grid):
 
 def intro_game():
     """
-    This explains teh concept of the game and starts it
+    This explains the concept of the game and starts it
     """
     print('''
           Welcome traveller, the Earth need your help.
